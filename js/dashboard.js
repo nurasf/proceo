@@ -62,11 +62,6 @@ document.addEventListener("click", (e) => {
     e.target.nextElementSibling.classList.toggle("hidden");
   }
 
-  if (e.target.classList.contains("arquivar-lista")) {
-    const coluna = e.target.closest(".column");
-    coluna.style.display = "none";
-  }
-
   if (e.target.classList.contains("apagar-lista")) {
     const coluna = e.target.closest(".column");
     coluna.remove();

@@ -17,7 +17,7 @@
       padding: 10px 16px;
       border: none;
       border-radius: 8px;
-      cursor: pointer;
+  cursor: pointer;
     }
 
     .botao-nova-lista-fixo:hover {
@@ -99,7 +99,6 @@
         <div class="menu-container">
           <button class="menu-toggle" onclick="alternarMenu(this)">⋮</button>
           <div class="menu-opcoes hidden">
-            <button onclick="arquivarLista(this)">Arquivar Lista</button>
             <button onclick="apagarLista(this)">Apagar Lista</button>
           </div>
         </div>
@@ -159,7 +158,6 @@
           <div class="menu-container">
             <button class="menu-toggle" onclick="alternarMenu(this)">⋮</button>
             <div class="menu-opcoes hidden">
-              <button onclick="arquivarLista(this)">Arquivar Lista</button>
               <button onclick="apagarLista(this)">Apagar Lista</button>
             </div>
           </div>
@@ -178,11 +176,6 @@
     function apagarLista(botao) {
       const coluna = botao.closest(".column");
       coluna.remove();
-    }
-
-    function arquivarLista(botao) {
-      const coluna = botao.closest(".column");
-      coluna.style.opacity = 0.3;
     }
 
     function adicionarMembro() {
